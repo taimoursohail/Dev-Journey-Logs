@@ -13,7 +13,7 @@ function getMilk(price, numbersOfBottle) {
   console.log("moveUp");
   console.log("moveRight");
   console.log("moveRight");
-  console.log("buy " + numbersOfBottle + " Bottles which cost you approx. " + (price * numbersOfBottle) );
+  console.log("buy " + numbersOfBottle + " Bottles which cost you approx. " + "$" +(price * numbersOfBottle) );
   console.log("moveLeft");
   console.log("moveLeft");
   console.log("moveDown");
