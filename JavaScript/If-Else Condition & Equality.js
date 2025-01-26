@@ -1,6 +1,4 @@
-
 var name = prompt("What is your name?");
-
 
 var number = Math.floor(Math.random() * 500000 + 1);
 var anotherNumber = Math.floor(Math.random() * 500000 + 1);
@@ -18,12 +16,18 @@ if (sum % 2 === 0) {
 }
 
 /*
+
 Comparison Operators Reference:
+
 === Strict equality (cares about data types)
 == Loose equality (ignores data types)
 !== Not equal to
 > Greater than
 < Less than
 >= Greater than or equal to
-<= Less than or equal to
+<= Less t an or equal to
+&& means Condition 1 is true/false with Condition 2
+|| means whether (Condition 1 would be true with Condition 2) or (Condition 1 could be false with Condition 2)
+! means not
+
 */
