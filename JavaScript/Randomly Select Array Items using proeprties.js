@@ -1,11 +1,13 @@
 function whosPaying(names) {
   
-    var x = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+    var  names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
     
-    var y = Math.floor(Math.random() * x.length); 
+    var y = Math.floor(Math.random() * names.length); 
     
-    var z = x[y]; 
+    var z = names[y]; 
     
     return z + " is going to buy lunch today!";
     
 }
+
+console.log(whosPaying());
