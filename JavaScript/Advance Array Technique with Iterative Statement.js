@@ -34,6 +34,17 @@ var x=1;
 var y = [ ];
 
 function z() {
+
+    /* 
+    
+    While Loop while ( Something is true ) { 
+     Put some instructions here;   
+    } 
+    
+    */
+    
+    while (x <= 100) {
+    
     if (x % 3 === 0 && x % 5 === 0) {
         y.push("Fizz-Buzz");    
 } else if (x % 3 === 0) {
@@ -45,5 +56,10 @@ function z() {
 }
     
 x++;
-console.log(y);
+
+} // Here the Loop ends
+
+console.log(y); // If I log inside loop statement it print array 100 times 
+
 }
+
