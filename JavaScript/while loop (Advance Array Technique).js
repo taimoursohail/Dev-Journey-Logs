@@ -1,11 +1,11 @@
 /*
     Write the program that prints the number from 1 - 100. 
-    But for multiple of three print "Fizz" instead of the number 
-    and for the multiple of 5 print "Buzz". 
+    But for a multiple of three print "Fizz" instead of the number 
+    and for a multiple of 5 print "Buzz". 
     For numbers which are multiples of both 3 and 5 print "FuzzBuzz".
 
-Hint: .push is the property which add the last item from array.
-      .pop is the property which remove the last item from array. 
+Hint: .push is the property which adds the last item from an array.
+      .pop is the property which removes the last item from an array. 
 */
 
 /*
