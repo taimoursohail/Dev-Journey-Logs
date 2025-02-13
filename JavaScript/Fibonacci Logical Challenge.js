@@ -17,20 +17,31 @@ Sixth number: 2 + 3 = 5
 
 
 function fibonacciGenerator (n) {
+    var series = []; // First I created the array for the series
 
-  var sequence = [];
+    // Since we know that 1st and 2nd item of the series is 0 & 1 so here is the condition:
 
-  if (n === 1) {
-      sequence = [0];
-  } else if (n >= 2) {
-      sequence = [0, 1];
-          for (var i = 2; i < n;  i++) {
-          var number = sequence[i - 1] + sequence[i - 2];
-          sequence.push(number);
-          }
-       }
-  return sequence;
+    if (n === 0) {
+        series = [0];
+    } else if (n === 2) {
+        series = [0 ,1];  // till here it's clear if 0 then serve 0 if 2 then serve 2 values.
+    } else {
+       
+        // So Logic is: result + previous result = result. 
+        
+        series = [0, 1];
+
+        for (var index = 2; index < n; index++) {
+            
+            series.push(series[series.length - 2 /*previousResult item of the array */] + series[series.length -1 /* result item of the array */]);   
+            // This push will add a unique result with help of last item of the array + second last item from the array
+            
+        }
+    
+    }
+    
+    return series;
 }
 
 let o = prompt("What Fabonacci sequence value you want?");
-    alert("OKay here is the "+ o + " numbers of sequence " + fibonacciGenerator(o));
+    alert("Okay here is the "+ o + " numbers of sequence " + fibonacciGenerator(o));
