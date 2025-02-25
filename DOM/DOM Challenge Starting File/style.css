@@ -1,0 +1,20 @@
+h1 {
+  color: red;
+}
+
+.huge {
+  font-size: 32px !important; 
+  /* Here the code actually didn't run becuase in JS you see I also assigned the font 15 rem font size and it's inline. Inline has supreme override authority than internal and external
+  !important override the suprem periortiy which I used in CSS*/
+}
+
+/*.innerText Respects CSS*/
+ul > li:nth-of-type(2) {
+  visibility: hidden;
+}
+
+/*.textContent Doesn't Respects CSS*/
+ul > li:nth-of-type(3) {
+  visibility: hidden;
+}
+
