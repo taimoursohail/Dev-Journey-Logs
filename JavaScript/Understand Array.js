@@ -62,6 +62,19 @@ if (names.includes(availableName)) { // Check if availableName is in the names a
 }
 
 /*
+    Method for Addition inside Array:
     .push(); method push the data at the end of the Array.
-    .unshift() method push the data at the bigining of the Array.
+    .unshift() method push the data at the begining of the Array.
+
+    Method for Cancellation inside of Array:
+    .pop(); method removes the data at the end of the Array.
+    .shift(); method removes the data at the begining of the Array.
+
+    Method for Checking the Index:
+    .indexOf(searchValue); tells you the at where this value exist in the Array.
+
+    Method to check via Boolean Value (True/False):
+    .includes(searchValue);
+    
+    If you close into that variable then could be recall it for later purpose.
 */
