@@ -60,3 +60,8 @@ if (names.includes(availableName)) { // Check if availableName is in the names a
 } else {
     alert("Ha Brokey! You are not invited to this Elite class party! Get lost!");
 }
+
+/*
+    .push(); method push the data at the end of the Array.
+    .unshift() method push the data at the bigining of the Array.
+*/
