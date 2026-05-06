@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= title %> 👀
+  </title>
+</head>
+
+<body>
+  <h1>
+    <u>
+      <%= title %>:
+    </u>
+  </h1>
+
+  <p>Current second:
+    <strong>
+      <%= seconds %>
+    </strong>
+  </p>
+  <p style="font-size: 18px;"><em>Current second is <% if (seconds % 2===0) { %>
+        <span style="font-size: 18px;">(Even)</span>
+        <% } else { %>
+          <span style="font-size: 18px;">(Odd)</span>
+          <% } %>.</em></p>
+
+  <% if (seconds % 2===0) { %>
+    <% for (let i=0; i < items.length; i++) { %>
+      <p style="font-size: 18px;">
+      <ul>
+        <li>
+          <%= items[i] %>
+        </li>
+      </ul>
+      </p>
+      <% } %>
+        <% } else { %>
+          <p>Since it's <% if (seconds % 2===0) { %>
+              <span style="font-size: 18px;">(Even)</span>
+              <% } else { %>
+                <span style="font-size: 18px;">(Odd)</span>
+                <% } %> second, we won't show the list!</p>
+          <% } %>
+
+
+
+            <!-- Footer goes here -->
+            <%- include('footer.ejs') %>
+</body>
+
+</html>

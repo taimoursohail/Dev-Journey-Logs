@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's <%= kindOfDay %>
+    </title>
+</head>
+
+<body>
+    <h1>Welcome to the <%= kindOfDay %> page!</h1>
+    <p>Today is a <%= kindOfDay %>. And since it's <% if (kindOfDay==="Saturday" || kindOfDay==="Sunday" ) { %>
+                a weekend day! You Should Relax! 😌
+                <% } else { %>
+                    a weekday. You have to work! 💼
+                    <% } %>
+    </p>
+
+</body>
+
+</html>

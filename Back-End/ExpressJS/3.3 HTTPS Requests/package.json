@@ -1,0 +1,23 @@
+{
+  "name": "3.3-https-requests",
+  "version": "1.0.0",
+  "description": "Testing All the Requests for learning ",
+  "keywords": [
+    "get",
+    "post",
+    "put",
+    "patch",
+    "delete"
+  ],
+  "license": "ISC",
+  "author": "Taimour",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {}
+}
